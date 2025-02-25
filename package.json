@@ -1,11 +1,19 @@
 {
   "name": "classcool",
-  "module": "index.ts",
-  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "predev": "bun wagmi generate",
+    "dev": "cd packages/ponder && bun run dev & cd packages/nextjs && bun run dev"
+  },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@wagmi/cli": "^2.2.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "module": "index.ts",
+  "type": "module"
 }
