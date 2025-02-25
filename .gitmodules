@@ -1,3 +1,6 @@
 [submodule "ponder"]
 	path = ponder
 	url = https://github.com/classcool/ponder-v4.git
+[submodule "foundry/lib/forge-std"]
+	path = foundry/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
